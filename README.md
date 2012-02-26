@@ -1,7 +1,7 @@
-## Coffee Sinatra Boilerplate
+## Project Gaston
 
-Simple boilerplate app to start a new backbone project utilizing coffeescript, Sinatra,
-Twitter Bootstrap, and MongoDB.
+Yet another project in my long line of Disney Planning apps. This one may also false
+start, but it's giving me a chance to try out backbone.
 
 `bundle install` to install everything
 
