@@ -15,6 +15,6 @@ Barista.logger.level = Logger::WARN
 module DBUtils
   def drop_db
     conn = Mongo::Connection.new
-    conn.drop_database("db-#{ENV['RACK_ENV']}")
+    conn.drop_database("gaston-#{ENV['RACK_ENV']}")
   end
 end
