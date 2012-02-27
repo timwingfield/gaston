@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Sun, 26 Feb 2012 23:34:27 GMT from
+/* DO NOT MODIFY. This file was compiled Mon, 27 Feb 2012 02:07:17 GMT from
  * /Users/Timbo/Code/backbone/gaston/app/coffeescripts/app/views/title_view.coffee
  */
 
@@ -13,6 +13,13 @@
     function TitleView() {
       TitleView.__super__.constructor.apply(this, arguments);
     }
+
+    TitleView.prototype.template = "title";
+
+    TitleView.prototype.render = function() {
+      $(this.el).html(this.template());
+      return this;
+    };
 
     return TitleView;
 
