@@ -1,9 +1,5 @@
-window.Gaston = 
-  Models: {}
-  Collections: {}
-  Routers: {}
-  Views: {}
 
 jQuery ->
-  gaston = new Gaston.Views.TitleView()
-  gaston.render()
+  $('#wrap').html(new window.TitleView().render().el)
+  #app = new TitleView
+  #app.render()
