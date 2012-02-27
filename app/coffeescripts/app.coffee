@@ -1,5 +1,9 @@
-#@app = window.app ? {}
+window.Gaston = 
+  Models: {}
+  Collections: {}
+  Routers: {}
+  Views: {}
 
 jQuery ->
-  #a = new app.AppView
-  #a.render()
+  gaston = new Gaston.Views.TitleView()
+  gaston.render()
