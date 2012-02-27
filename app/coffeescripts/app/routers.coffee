@@ -1,2 +1,0 @@
-#jQuery ->
-#  @app = window.app ? {}
