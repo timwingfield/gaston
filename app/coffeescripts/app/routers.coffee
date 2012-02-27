@@ -1,2 +1,2 @@
-jQuery ->
-  @app = window.app ? {}
+#jQuery ->
+#  @app = window.app ? {}
