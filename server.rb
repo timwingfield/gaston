@@ -11,12 +11,14 @@ class AppServer < Sinatra::Base
   serve_jst '/jst.js'
   
   assets do
+    serve '/img', from: 'app/img'
+
     my_js = [
       '/js/vendor/jquery.js',
       '/js/vendor/underscore.js',
       '/js/vendor/backbone.js',
       '/js/vendor/backbone.layoutmanager.min.js',
-      '/jst.js'
+      '/js/vendor/bootstrap.min.js'
     ]
 
     my_js << Dir.glob("./app/js/app/**/*.coffee").each do |f| 
@@ -30,6 +32,7 @@ class AppServer < Sinatra::Base
 
     css :application, '/css/application.css', [
       '/css/bootstrap.min.css',
+      '/css/bootstrap-responsive.min.css',
       '/css/screen.css'
     ]
   end

@@ -8,6 +8,13 @@
     <%= css :application, :media => "screen" %>
     <%= js :app %>
 
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+
     <!-- templates -->
     <script type="text/layout" id="main-layout">
       <div id="here"></div>
@@ -20,6 +27,8 @@
 
     <script type="text/tempalte" id="sample-p">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique posuere ultrices. Nunc quis gravida nisi. Cras tortor elit, vulputate vitae consequat vitae, tempor id justo. Proin ligula elit, accumsan et semper a, ultrices cursus sem. Aenean auctor justo in ipsum malesuada varius ut imperdiet elit. Quisque placerat neque eget nunc tristique sed hendrerit lorem posuere. Integer vitae rutrum lacus. Ut quis eros nisl.</p>
+      <i class="icon-search"></i>
+      <input type="button" class="btn btn-primary btn-mini" value="small button" />
     </script>
   </head>
   <body>
