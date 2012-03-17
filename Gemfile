@@ -6,14 +6,16 @@ gem 'bson_ext'
 gem 'sinatra'
 gem 'coffee-script'
 gem 'barista'
-gem 'shotgun'
 gem 'execjs'
 gem 'therubyracer-heroku', '~> 0.8'
 gem 'json'
 gem 'multi_json'
 gem 'tilt'
+gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
 
-group :development do
+group :development, :test do
+  gem 'shotgun'
+  
   gem 'rack-test'
   gem 'rspec'
   gem 'rspec-given'
