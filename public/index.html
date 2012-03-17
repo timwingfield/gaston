@@ -12,6 +12,7 @@
     <script src="/javascripts/vendor/jquery.js"></script>
     <script src="/javascripts/vendor/underscore.js"></script>
     <script src="/javascripts/vendor/backbone.js"></script>
+    <script src="/javascripts/vendor/backbone.layoutmanager.min.js"></script>
     
     <!-- javascript links to local libs here -->
 
@@ -22,8 +23,17 @@
     <script src="/javascripts/app.js"></script>
 
     <!-- templates -->
+    <script type="text/layout" id="main-layout">
+      <div id="here"></div>
+      <div id="below"></div>
+    </script>
+
     <script type="text/tempate" id="title-template">
       <h2 class="clearfix input">Nobody Plans Like Gaston</h2>
+    </script>
+
+    <script type="text/tempalte" id="sample-p">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tristique posuere ultrices. Nunc quis gravida nisi. Cras tortor elit, vulputate vitae consequat vitae, tempor id justo. Proin ligula elit, accumsan et semper a, ultrices cursus sem. Aenean auctor justo in ipsum malesuada varius ut imperdiet elit. Quisque placerat neque eget nunc tristique sed hendrerit lorem posuere. Integer vitae rutrum lacus. Ut quis eros nisl.</p>
     </script>
   </head>
   <body>

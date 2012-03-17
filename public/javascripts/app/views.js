@@ -1,4 +1,4 @@
-/* DO NOT MODIFY. This file was compiled Mon, 27 Feb 2012 04:41:57 GMT from
+/* DO NOT MODIFY. This file was compiled Sat, 17 Mar 2012 15:10:19 GMT from
  * /Users/Timbo/Code/backbone/gaston/app/coffeescripts/app/views.coffee
  */
 
@@ -14,16 +14,23 @@
       TitleView.__super__.constructor.apply(this, arguments);
     }
 
-    TitleView.prototype.template = function() {
-      return _.template($("#title-template").html());
-    };
-
-    TitleView.prototype.render = function() {
-      $(this.el).html(this.template());
-      return this;
-    };
+    TitleView.prototype.template = "#title-template";
 
     return TitleView;
+
+  })(Backbone.View);
+
+  window.SamplePView = (function(_super) {
+
+    __extends(SamplePView, _super);
+
+    function SamplePView() {
+      SamplePView.__super__.constructor.apply(this, arguments);
+    }
+
+    SamplePView.prototype.template = "#sample-p";
+
+    return SamplePView;
 
   })(Backbone.View);
 
