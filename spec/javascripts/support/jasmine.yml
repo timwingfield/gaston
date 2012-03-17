@@ -1,10 +1,10 @@
 src_files:
-  - "public/javascripts/vendor/jquery.js"
-  - "public/javascripts/vendor/underscore.js"
-  - "public/javascripts/vendor/**/*.{js,coffee}"
-  - "app/coffeescripts/app.coffee"
-  - "app/coffeescripts/app/models.coffee"
-  - "app/coffeescripts/**/*.{js,coffee}"
+  - "app/js/vendor/jquery.js"
+  - "app/js/vendor/underscore.js"
+  - "app/js/vendor/**/*.{js,coffee}"
+  - "app/js/app/models.coffee"
+  - "app/js/**/*.{js,coffee}"
+  - "app/js/app.coffee"
 
 stylesheets:
 
