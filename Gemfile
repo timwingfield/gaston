@@ -10,6 +10,7 @@ gem 'therubyracer-heroku', '~> 0.8'
 gem 'json'
 gem 'multi_json'
 gem 'tilt'
+gem 'sinatra-backbone', :require => 'sinatra/backbone'
 gem 'sinatra-assetpack', :require => 'sinatra/assetpack'
 
 group :development, :test do

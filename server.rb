@@ -1,11 +1,14 @@
 require "rubygems"
 require "sinatra/base"
 require "sinatra/assetpack"
+require "sinatra/jstpages"
 require "json"
 
 class AppServer < Sinatra::Base
   set :root, File.dirname(__FILE__)
   register Sinatra::AssetPack
+  register Sinatra::JstPages
+  serve_jst '/jst.js'
   
   assets do
     my_js = [
@@ -13,6 +16,7 @@ class AppServer < Sinatra::Base
       '/js/vendor/underscore.js',
       '/js/vendor/backbone.js',
       '/js/vendor/backbone.layoutmanager.min.js',
+      '/jst.js'
     ]
 
     my_js << Dir.glob("./app/js/app/**/*.coffee").each do |f| 
