@@ -1,5 +1,11 @@
 class window.TitleView extends Backbone.View
   template: "#title-template"
 
-class window.SamplePView extends Backbone.View
-  template: "#sample-p"
+class window.AddNameView extends Backbone.View
+  template: "#add-name"
+
+  events:
+    'click #add-trip-name': 'addTripName'
+
+  addTripName: ->
+    alert @$("#trip-name").val()

@@ -21,6 +21,8 @@ class AppServer < Sinatra::Base
       '/js/vendor/bootstrap.min.js'
     ]
 
+    #add '/jst.js' back in when we try Templates again
+
     my_js << Dir.glob("./app/js/app/**/*.coffee").each do |f| 
       f.sub!("./app", "")
       f.sub!(".coffee", ".js") 

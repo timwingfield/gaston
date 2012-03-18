@@ -8,7 +8,7 @@ class window.Router extends Backbone.Router
 
       views:
         "#here" : new window.TitleView
-        "#below" : new window.SamplePView
+        "#below" : new window.AddNameView
 
     @main.render (el) ->
       $("#wrap").html el
